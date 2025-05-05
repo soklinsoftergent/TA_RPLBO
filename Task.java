@@ -8,6 +8,7 @@ public class Task {
     private int userId;
     private String description;
     private boolean completed;
+    private Integer projectId;
 
     public Task(int id, String name, LocalDateTime deadline, int userId, String description) {
         this.id = id;
@@ -17,6 +18,7 @@ public class Task {
         this.userId = userId;
         this.description = description;
         this.completed = false;
+        this.projectId = null;
     }
 
     public Task(String name, String description) {
@@ -24,17 +26,20 @@ public class Task {
         this.description = description;
         this.dateCreated = LocalDate.now();
         this.completed = false;
+        this.projectId = null;
     }
 
     public Task(String name) {
         this.name = name;
         this.dateCreated = LocalDate.now();
         this.completed = false;
+        this.projectId = null;
     }
 
     public Task() {
         this.dateCreated = LocalDate.now();
         this.completed = false;
+        this.projectId = null;
     }
 
     public int getId() {
@@ -87,5 +92,13 @@ public class Task {
 
     public void setCompleted(boolean completed) {
         this.completed = completed;
+    }
+
+    public Integer getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(Integer projectId) {
+        this.projectId = projectId;
     }
 }
