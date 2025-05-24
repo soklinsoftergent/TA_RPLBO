@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.login.LoginController"
+            prefWidth="300.0" prefHeight="500.0" style="-fx-background-color: #2462A7;">
+    <VBox alignment="CENTER" spacing="15" layoutX="25" layoutY="40"
+          prefWidth="250.0" AnchorPane.leftAnchor="25" AnchorPane.rightAnchor="25">
+        
+        <ImageView fx:id="userIcon" fitWidth="80.0" fitHeight="80.0"/>
+        
+        <Label text="Welcome back you’ve\nbeen missed!" textFill="WHITE" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+
+        <TextField fx:id="usernameField" promptText="Enter Your Username" maxWidth="200.0"/>
+        <PasswordField fx:id="passwordField" promptText="Enter Your Password" maxWidth="200.0"/>
+
+        <Hyperlink text="Forgot your password?" textFill="WHITE" underline="true"/>
+        
+        <Button text="Sign In" fx:id="signInButton" maxWidth="200.0" style="-fx-background-color: lightgray;"/>
+        <Hyperlink text="Create account" textFill="WHITE"/>
+    </VBox>
+</AnchorPane>

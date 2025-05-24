@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.login.RegisterController"
+            prefWidth="300.0" prefHeight="500.0" style="-fx-background-color: #2462A7;">
+    <VBox alignment="CENTER" spacing="15" layoutX="25" layoutY="40"
+          prefWidth="250.0" AnchorPane.leftAnchor="25" AnchorPane.rightAnchor="25">
+        
+        <Label text="Create Account" textFill="WHITE">
+            <font><Font name="System Bold" size="18.0"/></font>
+        </Label>
+
+        <Label text="Dream Big, List it, Achieve it!🚀" textFill="BLACK">
+            <font><Font size="14.0"/></font>
+        </Label>
+
+        <TextField fx:id="usernameField" promptText="Pick your super username" maxWidth="200.0"/>
+        <PasswordField fx:id="passwordField" promptText="Create a secret code" maxWidth="200.0"/>
+        <PasswordField fx:id="confirmPasswordField" promptText="Double check-it" maxWidth="200.0"/>
+
+        <Button text="Sign Up" fx:id="signUpButton" maxWidth="200.0" style="-fx-background-color: lightgray;"/>
+        <Hyperlink fx:id="backToLoginLink" text="Already have an account" textFill="WHITE"/>
+    </VBox>
+</AnchorPane>
