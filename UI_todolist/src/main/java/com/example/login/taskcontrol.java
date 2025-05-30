@@ -1,4 +1,4 @@
-package com.example.loginapp; // Sesuaikan dengan nama package Anda
+package com.example.login; 
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,7 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 
-public class TaskItemController {
+public class taskcontrol {
 
     @FXML
     private HBox taskItemContainer; // Container utama untuk item tugas

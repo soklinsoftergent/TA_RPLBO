@@ -1,4 +1,4 @@
-package com.example.loginapp; // Sesuaikan dengan nama package Anda
+package com.example.login; 
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,7 +18,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-public class InputTaskController {
+public class inputtaskcontrol {
 
     @FXML
     private TextField taskInputField;
@@ -45,7 +45,7 @@ public class InputTaskController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("DatePickerUI.fxml"));
             Parent root = loader.load();
-            DatePickerController datePickerController = loader.getController();
+            datepickcontrol datePickerController = loader.getController();
 
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL); // Membuat jendela modal

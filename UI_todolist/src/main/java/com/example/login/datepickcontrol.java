@@ -1,4 +1,4 @@
-package com.example.loginapp; // Sesuaikan dengan nama package Anda
+package com.example.login; // Sesuaikan dengan nama package Anda
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -6,7 +6,7 @@ import javafx.scene.control.DatePicker;
 import javafx.stage.Stage;
 import java.time.LocalDate;
 
-public class DatePickerController {
+public class datepickcontrol {
 
     @FXML
     private DatePicker datePicker;

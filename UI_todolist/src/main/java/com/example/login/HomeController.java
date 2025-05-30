@@ -1,4 +1,4 @@
-package com.example.loginapp; // Sesuaikan dengan nama package Anda
+package com.example.login; 
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -43,7 +43,7 @@ public class HomeController {
                     try {
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("TaskItemUI.fxml"));
                         Parent taskItemBox = loader.load(); // Menggunakan Parent karena TaskItemUI.fxml adalah HBox
-                        TaskItemController controller = loader.getController();
+                        taskcontrol controller = loader.getController();
                         // Mengirim data tugas dan referensi ke HomeController
                         controller.setTaskData(task.getId(), task.getTitle(), task.getDetails(), HomeController.this);
                         setGraphic(taskItemBox);
